@@ -11,7 +11,7 @@ function App() {
       </div>
 
       {/* information body */}
-      <div className="mt-5">
+      <div className="mt-5 ">
         <About />
       </div>
     </div>);

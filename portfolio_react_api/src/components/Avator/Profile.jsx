@@ -14,7 +14,7 @@ const ProfileTitle = () => {
       <div>
         <span className="text-xs">Software Engineer at</span><br />
         <span className="transition-all duration-500 ease-in-out hover:underline text-xs text-blue-500 block">
-          <a href="#" alt="company name">Aadi BD Ltd</a>
+          <a href="https://aadi.com.bd" alt="company name">Aadi BD Ltd</a>
         </span>
       </div>
 
