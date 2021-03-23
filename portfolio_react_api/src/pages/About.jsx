@@ -4,11 +4,11 @@ import DetailSection from "../components/Avator/Details";
 
 const About = () => {
   return (
-    <div className="grid grid-cols-12 lg:mx-48">
-      <div className="col-span-4">
+    <div className="lg:grid lg:grid-cols-12 lg:mx-48 md:flex md:flex-wrap sm:flex sm:flex-wrap">
+      <div className="lg:col-span-4 md:mb-12 sm:mb-10">
         <ProfileSection />
       </div>
-      <div className="col-span-8">
+      <div className="lg:col-span-8">
         <DetailSection />
       </div>
     </div>
