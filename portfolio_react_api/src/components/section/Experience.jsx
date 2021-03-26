@@ -7,8 +7,8 @@ const Experience = ({ experiences }) => {
       <h1 className="font-bold font-sans text-2xl uppercase text-blue-500">
         Experience
       </h1>
-      {experiences.map((experience) => (
-        <article className="mb-5">
+      {experiences.map((experience, index) => (
+        <article className="mb-5" key={index}>
           <header>
             <h1 className="font-bold text-1xl mb-0 mt-1">
               {experience.designation}
@@ -28,7 +28,15 @@ const Experience = ({ experiences }) => {
               </time>
             </span>
             <p className="text-xs">{experience.short_description}</p>
-            <Tag />
+            {experience.working_stack.map((stk, s_index) => (
+              <Tag
+                key={s_index}
+                name={stk.name}
+                hover_bg_class="hover:bg-indigo-200"
+                text_color="text-emerald-900"
+                bg_color="bg-indigo-100"
+              />
+            ))}
           </header>
         </article>
       ))}

@@ -13,9 +13,9 @@ const Preference = ({ hobbies, currently_working, besides }) => {
       <div className="preference_border_line">
         <span className="text-xs text-gray-800 mt-4 mb-2">My Hobbies</span>
         <div>
-          {hobbies.map((hobby) => (
+          {hobbies.map((hobby, h_index) => (
             <Tag
-              key={hobby.name}
+              key={h_index}
               name={hobby.name}
               hover_bg_class="hover:bg-green-500"
               text_color="text-emerald-900"
@@ -28,9 +28,9 @@ const Preference = ({ hobbies, currently_working, besides }) => {
       <div className="preference_border_line">
         <span className="text-xs text-gray-800 mt-4 mb-2">Working with</span>
         <div>
-          {currently_working.map((current) => (
+          {currently_working.map((current, c_index) => (
             <Tag
-              key={current.name}
+              key={c_index}
               name={current.name}
               hover_bg_class="hover:bg-indigo-200"
               text_color="text-emerald-900"
@@ -43,10 +43,10 @@ const Preference = ({ hobbies, currently_working, besides }) => {
       <div className="preference_border_line">
         <span className="text-xs text-gray-800 mt-4 mb-2">Besides</span>
         <div>
-          {besides.map((current) => (
+          {besides.map((beside, b_index) => (
             <Tag
-              key={current.name}
-              name={current.name}
+              key={b_index}
+              name={beside.name}
               hover_bg_class="hover:bg-indigo-200"
               text_color="text-emerald-900"
               bg_color="bg-indigo-100"

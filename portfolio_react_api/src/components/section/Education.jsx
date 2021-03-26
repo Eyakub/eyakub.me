@@ -7,8 +7,8 @@ const Education = ({ educations }) => {
       <h1 className="font-bold font-sans text-2xl uppercase text-blue-500">
         Eucation
       </h1>
-      {educations.map((education) => (
-        <article className="mb-5">
+      {educations.map((education, index) => (
+        <article className="mb-5" key={index}>
           <header>
             <h1 className="font-bold text-1xl mb-0 mt-1">
               {education.course_name}

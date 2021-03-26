@@ -12,15 +12,15 @@ const Project = ({ projects }) => {
         Projects
       </h1>
       <div className="flex flex-wrap justify-between">
-        {projects.map((project) => (
-          <article className="mt-2 w-full xl:w-1/2 2xl:w-1/2">
+        {projects.map((project, p_index) => (
+          <article className="mt-2 w-full xl:w-1/2 2xl:w-1/2" key={p_index}>
             <h1 className="font-bold text-1xl mb-0 mt-1">
               <a href={`${project.source_url}`}>{project.name}</a>
             </h1>
             <p className="text-xs">{project.short_description}</p>
-            {stacks.forEach((stack) => (
+            {stacks.map((stack, index) => (
               <Tag
-                key={Math.random().toString(36)}
+                key={index}
                 name={stack}
                 hover_bg_class="hover:bg-indigo-200"
                 text_color="text-emerald-900"
@@ -29,30 +29,6 @@ const Project = ({ projects }) => {
             ))}
           </article>
         ))}
-        {/* <article className="mt-2 w-full xl:w-1/2">
-          <h1 className="font-bold text-1xl mb-0 mt-1">
-            <a href="https://eyakub.me">Home Rent API</a>
-          </h1>
-          <p className="text-xs">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
-            dolorum voluptatem harum eaque magni labore iste distinctio, alias
-            dignissimos ut accusantium fugit incidunt cum atque rerum nostrum
-            non, voluptas velit!
-          </p>
-          {/* <Tag /> */}
-        {/* </article> */}
-        {/* <article className="mt-2 w-full xl:w-1/2 ">
-          <h1 className="font-bold text-1xl mb-0 mt-1">
-            <a href="https://eyakub.me">Home Rent API</a>
-          </h1>
-          <p className="text-xs">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
-            dolorum voluptatem harum eaque magni labore iste distinctio, alias
-            dignissimos ut accusantium fugit incidunt cum atque rerum nostrum
-            non, voluptas velit!
-          </p>
-          {/* <Tag /> */}
-        {/* </article> */}
       </div>
     </section>
   );
