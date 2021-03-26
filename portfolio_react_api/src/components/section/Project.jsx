@@ -2,10 +2,9 @@ import React from "react";
 import Tag from "../tags/TagBoard";
 
 const Project = ({ projects }) => {
-  const stacks = projects.map((project) => {
-    return project.backend + project.frontend;
-  });
-  // console.log(stacks);
+  // const stacks = projects.map((project) => {
+  //   return project.backend.concat(project.frontend);
+  // });
   return (
     <section>
       <h1 className="font-bold font-sans text-2xl uppercase text-blue-500">
@@ -13,12 +12,13 @@ const Project = ({ projects }) => {
       </h1>
       <div className="flex flex-wrap justify-between">
         {projects.map((project, p_index) => (
+          // const project_stack = project.backend.concat(project.frontend);
           <article className="mt-2 w-full xl:w-1/2 2xl:w-1/2" key={p_index}>
             <h1 className="font-bold text-1xl mb-0 mt-1">
               <a href={`${project.source_url}`}>{project.name}</a>
             </h1>
             <p className="text-xs">{project.short_description}</p>
-            {stacks.map((stack, index) => (
+            {project.backend.concat(project.frontend).map((stack, index) => (
               <Tag
                 key={index}
                 name={stack}

@@ -41,8 +41,6 @@ export const demo_data = {
             "source_url": "https://eyakub.me",
             "frontend": [
                 "ReactJS",
-                "HTML",
-                "CSS"
             ],
             "backend": [
                 "NodeJS",
@@ -60,11 +58,10 @@ export const demo_data = {
             "source_url": "https://eyakub.me",
             "frontend": [
                 "ReactJS",
-                "HTML",
                 "CSS"
             ],
             "backend": [
-                "NodeJS",
+                "Django",
                 "MySQL"
             ],
             "user": 1
