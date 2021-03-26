@@ -1,5 +1,6 @@
 import React from 'react';
 import About from './pages/About';
+import { demo_data } from "./data/demo";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
 
       {/* information body */}
       <div className="mt-5 ">
-        <About />
+        <About info={demo_data} />
       </div>
     </div>);
 }

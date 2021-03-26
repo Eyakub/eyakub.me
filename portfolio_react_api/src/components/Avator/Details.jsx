@@ -4,13 +4,24 @@ import Experience from "../section/Experience";
 import Education from "../section/Education";
 import Project from "../section/Project";
 
-const DetailSection = () => {
+const DetailSection = ({
+  hobbies,
+  currently_working,
+  besides,
+  experiences,
+  educations,
+  projects,
+}) => {
   return (
     <div>
-      <Preference />
-      <Experience />
-      <Education />
-      <Project />
+      <Preference
+        hobbies={hobbies}
+        currently_working={currently_working}
+        besides={besides}
+      />
+      <Experience experiences={experiences} />
+      <Education educations={educations} />
+      <Project projects={projects} />
     </div>
   );
 };

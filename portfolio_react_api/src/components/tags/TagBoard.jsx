@@ -1,25 +1,12 @@
 import React from "react";
 
-const Tag = ({ hover_bg_class, text_color, bg_color }) => {
+const Tag = ({ name, hover_bg_class, text_color, bg_color }) => {
   return (
-    <div>
-      <span className="inline-block text-xs hover:bg-indigo-200 text-emerald-900 bg-indigo-100 rounded p-1 mr-2 mt-2">
-        Python
-      </span>
-      <span className="inline-block text-xs hover:bg-indigo-200 text-emerald-900 bg-indigo-100 rounded p-1 mr-2 mt-2">
-        Django
-      </span>
-      <span className="inline-block text-xs hover:bg-indigo-200 text-emerald-900 bg-indigo-100 rounded p-1 mr-2 mt-2">
-        REST API
-      </span>
-      <span className="inline-block text-xs hover:bg-indigo-200 text-emerald-900 bg-indigo-100 rounded p-1 mr-2 mt-2">
-        ReactJS
-      </span>
-      <span className="inline-block text-xs hover:bg-indigo-200 text-emerald-900 bg-indigo-100 rounded p-1 mr-2 mt-2">
-        JavaScript
-      </span>
-      <span className="inline-block text-xs hover:bg-indigo-200 text-emerald-900 bg-indigo-100 rounded p-1 mr-2 mt-2">
-        jQuery
+    <div className="inline-block">
+      <span
+        className={`text-xs ${hover_bg_class} ${text_color} ${bg_color} rounded p-1 mr-2 mt-2`}
+      >
+        {name}
       </span>
     </div>
   );
