@@ -14,8 +14,10 @@ const Project = ({ projects }) => {
         {projects.map((project, p_index) => (
           // const project_stack = project.backend.concat(project.frontend);
           <article className="mt-2 w-full xl:w-1/2 2xl:w-1/2" key={p_index}>
-            <h1 className="font-bold text-1xl mb-0 mt-1">
-              <a href={`${project.source_url}`}>{project.name}</a>
+            <h1 className="font-bold text-blue-600 text-1xl mb-0 mt-1">
+              <a href={`${project.live_url}`} target="_blank" rel="noreferrer">
+                {project.name}
+              </a>
             </h1>
             <p className="text-xs">{project.short_description}</p>
             {project.backend.concat(project.frontend).map((stack, index) => (

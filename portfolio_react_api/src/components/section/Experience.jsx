@@ -2,6 +2,9 @@ import React from "react";
 import Tag from "../tags/TagBoard";
 
 const Experience = ({ experiences }) => {
+  const getDate = (date) => {
+    return date ? date.split(" ")[0] : "";
+  };
   return (
     <section className="mb-12">
       <h1 className="font-bold font-sans text-2xl uppercase text-blue-500">
@@ -24,7 +27,10 @@ const Experience = ({ experiences }) => {
             <span className="company_address text-xs text-gray-400">
               <address className="inline">{experience.address} - </address>
               <time>
-                {experience.started_time} to {experience.end_time}
+                {getDate(experience.started_time)} to{" "}
+                {experience.current_job
+                  ? "Present"
+                  : getDate(experience.end_time)}
               </time>
             </span>
             <p className="text-xs">{experience.short_description}</p>

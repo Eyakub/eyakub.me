@@ -1,7 +1,9 @@
 import React from "react";
-import Tag from "../tags/TagBoard";
 
 const Education = ({ educations }) => {
+  const getDate = (date) => {
+    return date.split(" ")[0];
+  };
   return (
     <section className="mb-12">
       <h1 className="font-bold font-sans text-2xl uppercase text-blue-500">
@@ -24,7 +26,8 @@ const Education = ({ educations }) => {
             <span className="company_address text-xs text-gray-400">
               <address className="inline">{education.address} - </address>
               <time>
-                {education.started_time} to {education.end_time}
+                {getDate(education.started_time)} to{" "}
+                {getDate(education.end_time)}
               </time>
             </span>
             {/* <p className="text-xs">{education.institution_info}</p> */}
