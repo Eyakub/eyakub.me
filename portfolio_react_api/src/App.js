@@ -1,21 +1,28 @@
-import React from 'react';
+import React, { Susponse } from 'react';
 import About from './pages/About';
+import NavBar from './components/Navbar/Navbar';
 import { demo_data } from "./data/demo";
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App p-3 lg:container mx-auto md:container md:mx-auto sm:container sm:mx-auto">
-      <div className="grid grid-cols-1 justify-items-end">
-        <ul className="list-none inline">
-          <li>About</li>
-        </ul>
-      </div>
+    <Router>
+      <div className="App p-3 lg:container mx-auto md:container md:mx-auto sm:container sm:mx-auto">
+        {/* Narbar */}
+        <NavBar />
 
-      {/* information body */}
-      <div className="mt-5 ">
-        <About info={demo_data} />
+        <Switch>
+          {/* information body */}
+          <Route exact path="/">
+            <About info={demo_data} />
+          </Route>
+          <Route exact path="/resume">
+            <h1>Test</h1>
+          </Route>
+        </Switch>
       </div>
-    </div>);
+    </Router >
+  );
 }
 
 export default App;
