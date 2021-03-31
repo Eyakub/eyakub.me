@@ -1,18 +1,21 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const NavItem = ({itemName, toLink}) => {
     return (
-      <Link class="
+      <NavLink className="
         no-underline 
         text-teal-dark 
-        border-b-2 
-        border-teal-dark uppercase 
+        border-b-2
+        border-transparent
+        uppercase
         tracking-wide 
         font-bold text-xs 
-        py-3 mr-8" to={toLink}>
+        py-3 mr-8" to={toLink}
+        activeClassName="border-teal-dark"
+      >
           {itemName}
-      </Link>
+      </NavLink>
     )
 }
 
