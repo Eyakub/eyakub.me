@@ -4,14 +4,14 @@ import Tag from "../tags/TagBoard";
 const Preference = ({ hobbies, currently_working, besides }) => {
   return (
     <section className="mb-16">
-      <p className="italic text-xs">
+      <p className="italic text-xs font-section-paragraph">
         With a Bachelor's degree in Computer Science & Engineering and have some
         hands-on experience using a few stacks to create and implement software
         applications also <b>Two</b> years of professional experience in 
         <b>Python(Django).</b>
       </p>
       <div className="preference_border_line">
-        <span className="text-xs text-gray-800 mt-4 mb-2">My Hobbies</span>
+        <span className="text-xs text-gray-800 mt-4 mb-2 font-section-paragraph">My Hobbies</span>
         <div>
           {hobbies.map((hobby, h_index) => (
             <Tag
@@ -26,7 +26,7 @@ const Preference = ({ hobbies, currently_working, besides }) => {
       </div>
 
       <div className="preference_border_line">
-        <span className="text-xs text-gray-800 mt-4 mb-2">Working with</span>
+        <span className="text-xs text-gray-800 mt-4 mb-2 font-section-paragraph">Working with</span>
         <div>
           {currently_working.map((current, c_index) => (
             <Tag
@@ -41,7 +41,7 @@ const Preference = ({ hobbies, currently_working, besides }) => {
       </div>
 
       <div className="preference_border_line">
-        <span className="text-xs text-gray-800 mt-4 mb-2">Besides</span>
+        <span className="text-xs text-gray-800 mt-4 mb-2 font-section-paragraph">Besides</span>
         <div>
           {besides.map((beside, b_index) => (
             <Tag

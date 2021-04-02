@@ -1,5 +1,6 @@
-import React, { Susponse } from 'react';
+import React from 'react';
 import About from './pages/About';
+import Resume from './pages/Resume';
 import NavBar from './components/Navbar/Navbar';
 import { demo_data } from "./data/demo";
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
@@ -17,7 +18,7 @@ function App() {
             <About info={demo_data} />
           </Route>
           <Route exact path="/resume">
-            <h1>Test</h1>
+            <Resume />
           </Route>
         </Switch>
       </div>

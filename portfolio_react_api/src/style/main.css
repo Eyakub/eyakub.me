@@ -23,6 +23,11 @@
   color: #064e3b;
 }
 
+.active_navbar {
+  color: rgba(107, 114, 128, 1) !important;
+  border-bottom: 2px solid rgba(107, 114, 128, 1);
+}
+
 @media only screen and (max-width: 640px) and (min-width: 360px) {
   .mb_mobile {
     margin-bottom: 26px;

@@ -2,7 +2,12 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'section-title': ['Oswald', 'Georgia', 'Times New Roman', 'serif'],
+        'section-paragraph': ['Lato', 'Open Sans', 'sans-serif']
+      }
+    },
   },
   variants: {
     extend: {},

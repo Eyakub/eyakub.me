@@ -7,7 +7,7 @@ const Project = ({ projects }) => {
   // });
   return (
     <section>
-      <h1 className="font-bold font-sans text-2xl uppercase text-blue-500">
+      <h1 className="font-bold font-section-title text-2xl uppercase text-blue-500">
         Projects
       </h1>
       <div className="flex flex-wrap justify-between">
@@ -19,7 +19,7 @@ const Project = ({ projects }) => {
                 {project.name}
               </a>
             </h1>
-            <p className="text-xs">{project.short_description}</p>
+            <p className="text-xs font-section-paragraph">{project.short_description}</p>
             {project.backend.concat(project.frontend).map((stack, index) => (
               <Tag
                 key={index}
