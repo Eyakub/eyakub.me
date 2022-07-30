@@ -12,9 +12,9 @@ const ProfileTitle = () => {
 
       {/* designation and working place */}
       <div>
-        <span className="text-xs font-section-paragraph">Software Engineer at</span><br />
+        <span className="text-xs font-section-paragraph">Full-stack Developer at</span><br />
         <span className="transition-all font-section-paragraph duration-500 ease-in-out hover:underline text-xs text-blue-500 block">
-          <a href="https://aadi.com.bd" alt="company name">Aadi BD Ltd</a>
+          <a href="https://goama.com/" alt="company name">Goama</a>
         </span>
       </div>
 

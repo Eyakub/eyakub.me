@@ -13,6 +13,29 @@ export const demo_data = {
     "address": "Dhaka, Bangladesh",
     "projects": [
         {
+            "name": "Goama",
+            "type": "Django",
+            "description": "",
+            "short_description": "Goama is helping companies to optimize their Marketing campaigns by using games and gamification systems into their app or web.",
+            "cover": null,
+            "live_url": "https://goama.com",
+            "source_url": null,
+            "frontend": [
+                "ReactJS",
+                "JavaScript",
+                "TypeScript",
+                "Bootstrap",
+                "MaterializeCSS"
+            ],
+            "backend": [
+                "Python",
+                "Django",
+                "MySQL",
+                "Celery"
+            ],
+            "user": 1
+        },
+        {
             "name": "Aadi",
             "type": "Django",
             "description": "",
@@ -455,7 +478,7 @@ export const demo_data = {
         {
             "name": "Deep Learning",
             "type": "Technology",
-            "is_show": true,
+            "is_show": false,
             "is_besides": true,
             "is_working": false,
             "user": [
@@ -471,6 +494,14 @@ export const demo_data = {
             "user": [
                 1
             ]
+        },
+        {
+            "name": "TypeScript",
+            "type": "Language",
+            "is_show": true,
+            "is_besides": true,
+            "is_working": true,
+            "user": [1]
         }
     ],
     "references": [
@@ -513,6 +544,112 @@ export const demo_data = {
     ],
     "user_experiences": [
         {
+            "organization_name": "Goama",
+            "organization_logo": null,
+            "organization_url": "https://goama.com",
+            "address": "Banani 11, Dhaka",
+            "designation": "Full-stack Developer",
+            "long_description": "Goama is helping companies to optimize their Marketing campaigns by using games and gamification systems into their app or web.",
+            "short_description": "Goama is helping companies to optimize their Marketing campaigns by using games and gamification systems into their app or web.",
+            "current_job": true,
+            "duration": "10.00",
+            "started_time": "2022-04-27",
+            "end_time": "Running",
+            "user": 1,
+            "working_stack": [
+                {
+                    "name": "Python",
+                    "type": "Programming Language",
+                    "is_show": true,
+                    "is_besides": false,
+                    "is_working": true,
+                    "user": [
+                        1
+                    ]
+                },
+                {
+                    "name": "JavaScript",
+                    "type": "Programming Language",
+                    "is_show": true,
+                    "is_besides": false,
+                    "is_working": true,
+                    "user": [
+                        1
+                    ]
+                },
+                {
+                    "name": "TypeScript",
+                    "type": "Programming Language",
+                    "is_show": true,
+                    "is_besides": false,
+                    "is_working": true,
+                    "user": [
+                        1
+                    ]
+                },
+                {
+                    "name": "Django",
+                    "type": "Framework",
+                    "is_show": true,
+                    "is_besides": false,
+                    "is_working": true,
+                    "user": [
+                        1
+                    ]
+                },
+                {
+                    "name": "ReactJS",
+                    "type": "Library",
+                    "is_show": true,
+                    "is_besides": false,
+                    "is_working": true,
+                    "user": [
+                        1
+                    ]
+                },
+                {
+                    "name": "MySQL",
+                    "type": "Database",
+                    "is_show": true,
+                    "is_besides": false,
+                    "is_working": false,
+                    "user": [
+                        1
+                    ]
+                },
+                {
+                    "name": "Git",
+                    "type": "Tool",
+                    "is_show": true,
+                    "is_besides": false,
+                    "is_working": false,
+                    "user": [
+                        1
+                    ]
+                },
+                {
+                    "name": "Postman",
+                    "type": "Tool",
+                    "is_show": true,
+                    "is_besides": false,
+                    "is_working": false,
+                    "user": [
+                        1
+                    ]
+                },
+                {
+                    "name": "Celery",
+                    "type": "Technology",
+                    "is_show": true,
+                    "is_besides": false,
+                    "is_working": false,
+                    "user": [
+                        1
+                    ]
+                },
+            ]
+        },
+        {
             "organization_name": "Aadi BD Ltd",
             "organization_logo": null,
             "organization_url": "https://aadi.com.bd",
@@ -520,10 +657,10 @@ export const demo_data = {
             "designation": "Software Engineer",
             "long_description": "Bangladesh's first ever cross-border marketplace.\r\nDevelop Product\r\n\r\n    Building web application called AadiBD Ltd, Bangladesh's first ever cross border marketplace.\r\n    Back-end development, creating and customizing existing app.\r\n    Besides learning design and dynamic contents for existing project.\r\n    Tools & Tech: Python, Django, PostgreSQL, MySQL, JS, jQuery, VueJS, HTML\r\n\r\nAccomplishments\r\n\r\n    Implementation of Pathao and many more interesting services\r\n    Built scripts for SMS integration & Online Payment system.\r\n    EC2 Instance of AWS, Docker, Travis CI, Deployment on Server",
             "short_description": "Bangladesh’s first ever cross-border marketplace. Aadi focuses on promoting Bangladesh and its strength in various industries at a global level.",
-            "current_job": true,
+            "current_job": false,
             "duration": "10.00",
-            "started_time": "2020-06-14 10:47",
-            "end_time": "2021-03-20 10:47",
+            "started_time": "2020-06-14",
+            "end_time": "2022-04-25",
             "user": 1,
             "working_stack": [
                 {
