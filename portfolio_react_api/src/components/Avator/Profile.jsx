@@ -5,7 +5,7 @@ const ProfileTitle = () => {
     <div>
       {/* avator */}
       <div className="flex -space-x-1 overflow-hidden">
-        <img src="/images/eyakub.jpeg" alt=""
+        <img src="/images/eyakub2.png" alt=""
           className="inline-block h-24 w-24 rounded-full ring-2 ring-white" />
       </div>
       <h1 className="mt-4 text-3xl font-bold font-section-title text-blue-700">MD Eyakub Sorkar</h1>
