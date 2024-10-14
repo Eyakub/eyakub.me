@@ -1,0 +1,16 @@
+[
+    {
+        "fields": {
+            "emoji": "👋",
+            "description": "I'm a passionate Backend Developer."
+        }
+    },
+    {
+        "fields": {
+            "emoji": "💼",
+            "description": "Currently working at",
+            "company": "Goama",
+            "companyUrl": "https://go-games.gg"
+        }
+    }
+]
